@@ -1,20 +1,16 @@
 package fr.lernejo.guessgame;
-
 import fr.lernejo.logger.Logger;
 import fr.lernejo.logger.LoggerFactory;
 
 import java.util.Scanner;
-
 public class HumanPlayer implements Player {
-
     public Logger logger = LoggerFactory.getLogger("player");
     public Scanner scanner = new Scanner(System.in);
-
     @Override
     public long askNextGuess() {
+        logger.log("Enter a number");
         return scanner.nextLong();
     }
-
     @Override
     public void respond(boolean lowerOrGreater) {
         if(lowerOrGreater) {
