@@ -1,6 +1,8 @@
 package fr.lernejo.guessgame;
 import fr.lernejo.logger.ConsoleLogger;
 import fr.lernejo.logger.Logger;
+import fr.lernejo.logger.LoggerFactory;
+
 import java.security.SecureRandom;
 public class Launcher {
     public static Simulation simulation;
