@@ -5,7 +5,8 @@ import java.security.SecureRandom;
 public class Launcher {
     public static Simulation simulation;
     public static long maxLoop;
-    public static Logger logger = new ConsoleLogger();
+    //public static Logger logger = new ConsoleLogger();
+    public static Logger logger = LoggerFactory.getLogger("launcher");
     public static void main(String[] args) {
         //Simulation simulation = new Simulation(new HumanPlayer());
         SecureRandom random = new SecureRandom();
